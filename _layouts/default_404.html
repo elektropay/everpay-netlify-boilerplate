@@ -7,16 +7,23 @@ layout: compress
 
   {% include head.html %}
 
-  <body>
+  <body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--fixed kt-subheader--solid kt-aside--enabled kt-aside--fixed kt-page--loading">
 
+    {% include header_404.html %}
+    
+   <main>
+     
+<div class="kt-grid kt-grid--ver kt-grid--root">
+  <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-error-v4" style="background-image: url(https://res.cloudinary.com/lmj6rf6tz/image/upload/v1496224834/error-404_wyhkbe.png);">
+      
+  {{ content }}
 
-    <main>
-
-      {{ content }}
-
+  </div>	
+</div>
+          
     </main>
-
-    {% include footer.html %}
+	
+    {% include footer_404.html %}
 
   </body>
 
