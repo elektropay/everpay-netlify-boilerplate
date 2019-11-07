@@ -1,0 +1,14 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{% if page.section == "home" %}{{ site.title }}{% else %}{{ page.title | default: site.title }}{% endif %}</title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:300,400,500,600,700">
+  <link rel="stylesheet" href="{{ "/assets/error-4.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/plugins/global/plugins.bundle.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/everpay.bundle.css" | relative_url }}">
+  {% if jekyll.environment == 'production' and site.analytics %}
+    {% include analytics.html %}
+  {% endif %}
+  <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
